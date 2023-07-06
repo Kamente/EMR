@@ -5,6 +5,7 @@
                 "id": 1,
                 "name": "Jonh",
                 "email": "john@gmail.com",
+                "password": "johnpassword",
                 "age": 21,
                 "phone": "+12343",
                 "Medical History": [
@@ -43,6 +44,7 @@
                 "id": 2,
                 "name": "James",
                 "email": "james@gmail.com",
+                "password": "jamespassword",
                 "age": 34,
                 "phone": "+2541898",
                 "Medical History": [
