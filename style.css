@@ -1,7 +1,22 @@
-/* SignUp page */
-* {
-    background-color: linear-gradient(rgb(243, 227, 227));
+body {
+    background-image: linear-gradient(rgb(243, 227, 227), rgb(126, 124, 124));
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    background-color: rgb(187, 185, 185);
+    padding: 0 230px 10px 250px;
+    margin-top: 100px;
+    font-size: larger;
+}
+
 
 img[alt="myhealth"] {
     margin-left: 50px;
@@ -12,13 +27,6 @@ img[alt="myhealth"] {
     justify-content: center;
     align-items: center;
 
-}
-
-.content {
-    background-color: rgb(208, 204, 204);
-    padding: 0 230px 10px 250px;
-    margin-top: 100px;
-    font-size: larger;
 }
 
 .signIn {
@@ -77,13 +85,15 @@ p {
 }
 
 /* LogIn Page */
-#checkbox{
+#checkbox {
     display: inline-flex;
     align-items: center;
 }
-#checkbox a{
+
+#checkbox a {
     margin: 10px;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     margin-top: 14px;
-}
+}  
