@@ -96,4 +96,29 @@ p {
 
 input[type="checkbox"] {
     margin-top: 14px;
-}  
+}
+
+/*patientInfo styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.patient-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.patient-card h2 {
+    margin-top: 0;
+}
+
+.patient-card p {
+    margin-bottom: 10px;
+}
