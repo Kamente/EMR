@@ -94,7 +94,18 @@ body {
     border-radius: 60px 0px 60px 0px;
     margin-left: 400px;
 }
-
+#cardp{
+    font-size: 20px;
+    margin: 70px 30px;
+}
+#appointment{
+    background-color: rgb(102, 99, 99);
+    color: white;
+    width: fit-content;
+    font-size: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+}
 #start {
     padding: 10px;
     font-size: 20px;
@@ -198,6 +209,9 @@ p {
     list-style: none;
     display: flex;
     gap: 70px;
+}
+.socials li:hover{
+    transform: scale(1.3);
 }
 
 .fab {
