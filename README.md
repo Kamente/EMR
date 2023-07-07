@@ -13,12 +13,12 @@ JUSTIN KAMENTE
 ## Project Description
 
 ```
- 
+MyHealth is a web application that provides a platform for patients to access and manage their personal health information online. The web app allows patients to securely log in and access their medical records, appointments, and other health-related data.
 ```
 
 ## Project SetUp and Instructions
 
-#### To set up and run the project follo the below steps
+#### To set up and run the project follow the below steps
 
 ```
 git clone https://github.com/Kamente/EMR
@@ -45,6 +45,9 @@ git push origin master
 https://myhealthpatients.onrender.com/myHealthApi
 ```
 ### lINK TO LIVE SITE
+```
+https://myhealth-emr.vercel.app
+```
 
 ##### 
 
