@@ -21,6 +21,12 @@
     border-radius: 10px;
     color: blue;
     font-size: 20px;
+    font-weight: 600;
+}
+
+#menu:hover {
+    background-color: blue;
+    color: black;
 }
 
 #nav {
@@ -51,6 +57,14 @@
     opacity: 1;
 }
 
+.container {
+    background-image: linear-gradient(rgb(243, 227, 227), rgb(126, 124, 124));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
 
 body {
     background-image: linear-gradient(rgb(243, 227, 227), rgb(126, 124, 124));
@@ -63,12 +77,22 @@ body {
 .content {
     background-color: rgb(187, 185, 185);
     padding: 0 230px 10px 250px;
-    margin-top: 100px;
+    margin-top: 30px;
     font-size: larger;
+    position: fixed;
 }
 
 .center {
-    margin: 12% 5%;
+    margin: 11% 5%;
+    display: flex;
+}
+
+.card {
+    height: 300px;
+    width: 400px;
+    background-color: rgb(221, 217, 217);
+    border-radius: 60px 0px 60px 0px;
+    margin-left: 400px;
 }
 
 #start {
@@ -77,6 +101,7 @@ body {
     color: blue;
     font-weight: 600;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 #start:hover {
@@ -92,14 +117,15 @@ img[alt="myhealth"] {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 100vh;
 }
 
 .signIn {
     background-color: rgb(208, 204, 204);
-    padding: 60px 200px 40px 220px;
-    margin-top: 100px;
-    font-size: larger;
+    padding: 80px 200px 50px 220px;
+    margin-top: 80px;
+    font-size: x-large;
+    position: fixed;
 }
 
 .signup form input {
@@ -143,11 +169,39 @@ a {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 p {
-    font-size: 24px;
+    font-size: 30px;
+}
+
+.footer {
+    border-top: 2px solid #1a1010;
+    display: flex;
+}
+
+#footer {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    margin-top: 30px;
+    color: black;
+}
+
+#footer li:hover {
+    color: blue;
+}
+
+.socials {
+    margin-left: 400px;
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+.fab {
+    font-size: 40px;
 }
 
 /* LogIn Page */
