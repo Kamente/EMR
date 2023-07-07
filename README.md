@@ -44,7 +44,7 @@ git push origin master
 ```
 https://myhealthpatients.onrender.com/myHealthApi
 ```
-### lINK TO LIVE SITE
+### LINK TO LIVE SITE
 ```
 https://myhealth-emr.vercel.app
 ```
