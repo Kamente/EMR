@@ -1,29 +1,25 @@
-const apiUrl = "http://localhost:3000/myHealthApi";
-
-// const submit = document.getElementById("submit");
-// submit.addEventListener("click", () => {
-//     alert("Submitted");
-// });
-
+const apiUrl = "https://myhealthpatients.onrender.com/myHealthApi";
 
 // Login Page
-const loginForm = document.getElementById("loginForm");
+const loginForm = document.getElementById("LoginForm");
 loginForm.addEventListener("submit", handleLogin);
 
 function handleLogin(event) {
     event.preventDefault();
+
     const email = document.getElementById("emailInput").value;
     const password = document.getElementById("passwordInput").value;
 
     fetch(apiUrl)
         .then((response) => response.json())
         .then((data) => {
-            const matchedPatient = data.myHealthApi.patients.find(
+            const matchedPatient = data.patients.find(
                 (patient) => patient.email === email && patient.password === password
             );
 
             if (matchedPatient) {
-                window.location.href = `dashboard.html?patientId=${matchedPatient.id}`;
+                localStorage.setItem("loggedInPatient", JSON.stringify(matchedPatient));
+                window.location.href = "dashboard.html";
             } else {
                 alert("Invalid email or password");
             }
@@ -33,15 +29,17 @@ function handleLogin(event) {
         });
 }
 
-// Dashboard Page
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const patientId = urlParams.get("patientId");
-
+// Fetch patient data from the API
 fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
-        const patient = data.myHealthApi.patients.find(
+        // Get the logged-in patient's ID from the URL query parameters
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const patientId = urlParams.get("patientId");
+
+        // Find the logged-in patient in the data
+        const patient = data.myHealthApi.patient.find(
             (patient) => patient.id === parseInt(patientId)
         );
 
@@ -56,37 +54,21 @@ fetch(apiUrl)
     });
 
 function displayPatientInformation(patient) {
-    const patientDataElement = document.getElementById("patientData");
+    // Get the necessary elements
+    const patientNameElement = document.getElementById("patientName");
+    const patientEmailElement = document.getElementById("patientEmail");
+    const patientAgeElement = document.getElementById("patientAge");
+    const patientPhoneElement = document.getElementById("patientPhone");
+    const patientMedicalHistoryElement = document.getElementById("patientMedicalHistory");
+    const patientAppointmentsElement = document.getElementById("patientAppointments");
 
-    const patientCard = document.createElement("div");
-    patientCard.classList.add("patient-card");
-
-    const patientName = document.createElement("h2");
-    patientName.textContent = patient.name;
-
-    const patientEmail = document.createElement("p");
-    patientEmail.textContent = "Email: " + patient.email;
-
-    const patientAge = document.createElement("p");
-    patientAge.textContent = "Age: " + patient.age;
-
-    const patientPhone = document.createElement("p");
-    patientPhone.textContent = "Phone: " + patient.phone;
-
-    const patientMedicalHistory = document.createElement("p");
-    patientMedicalHistory.textContent =
+    // Set the patient information in the elements
+    patientNameElement.textContent = patient.name;
+    patientEmailElement.textContent = "Email: " + patient.email;
+    patientAgeElement.textContent = "Age: " + patient.age;
+    patientPhoneElement.textContent = "Phone: " + patient.phone;
+    patientMedicalHistoryElement.textContent =
         "Medical History: " + JSON.stringify(patient["Medical History"]);
-
-    const patientAppointments = document.createElement("p");
-    patientAppointments.textContent =
+    patientAppointmentsElement.textContent =
         "Appointments: " + JSON.stringify(patient.appointments);
-
-    patientCard.appendChild(patientName);
-    patientCard.appendChild(patientEmail);
-    patientCard.appendChild(patientAge);
-    patientCard.appendChild(patientPhone);
-    patientCard.appendChild(patientMedicalHistory);
-    patientCard.appendChild(patientAppointments);
-
-    patientDataElement.appendChild(patientCard);
 }
