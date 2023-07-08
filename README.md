@@ -9,11 +9,13 @@
 JUSTIN KAMENTE
 
 ```
-###Log In
+### Log In
 ```
 Trying signin up a new account,
 Then log it in or can login one of the patient's info in the json
-data .i.e email and password to see their medical information
+data .i.e email and password to see their medical information.
+e.g email: john@gmail.com
+    password: johnpassword
 ```
 
 ## Project Description
