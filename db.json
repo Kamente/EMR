@@ -1,109 +1,107 @@
 {
-    "myHealthApi": {
-        "patient": [
-            {
-                "id": 1,
-                "name": "Jonh",
-                "email": "john@gmail.com",
-                "password": "johnpassword",
-                "age": 21,
-                "phone": "+12343",
-                "Medical History": [
-                    {
-                        "condition": "HIV",
-                        "diagnosis": "1-1-2015",
-                        "treatment": [
-                            "ARVs",
-                            "Regular Exercises"
-                        ]
-                    },
-                    {
-                        "condition": "Diabetes",
-                        "diagnosis": "2-5-2016",
-                        "treatment": "insulin"
-                    }
-                ],
-                "appointments": [
-                    {
-                        "id": 21,
-                        "date": "2-7-2023",
-                        "time": "8.40am",
-                        "doctor": "Dr.Evans",
-                        "Hospital": "Karen, Nairobi"
-                    },
-                    {
-                        "id": 34,
-                        "date": "4-8-2023",
-                        "time": "10.00am",
-                        "doctor": "Will",
-                        "Hospital": "Karen, Nairobi"
-                    }
-                ]
-            },
-            {
-                "id": 2,
-                "name": "James",
-                "email": "james@gmail.com",
-                "password": "jamespassword",
-                "age": 34,
-                "phone": "+2541898",
-                "Medical History": [
-                    {
-                        "condition": "Allergies",
-                        "diagnosis": "4-5-2018",
-                        "treatment": [
-                            "Avoid allergens",
-                            "Zyrtec"
-                        ]
-                    },
-                    {
-                        "condition": "asthma",
-                        "diagnosis": "10-12-2002",
-                        "treatment": [
-                            "Inhaler",
-                            "Avoid allergens"
-                        ]
-                    }
-                ],
-                "appointments": [
-                    {
-                        "id": 102,
-                        "date": "3-8-2023",
-                        "time": "10.30",
-                        "doctor": "Dr.Kim",
-                        "Hospital": "Nairobi Hospital"
-                    },
-                    {
-                        "id": 34,
-                        "date": "4-8-2023",
-                        "time": "10.00am",
-                        "doctor": "Justin",
-                        "Hospital": "Meru General"
-                    }
-                ]
-            }
-        ],
-        "doctors": [
-            {
-                "id": 1,
-                "name": "Dr.Evans",
-                "speciality": "Demartologist"
-            },
-            {
-                "id": 2,
-                "name": "Will",
-                "speciality": "endocrinologist"
-            },
-            {
-                "id": 3,
-                "name": "Dr.Kim",
-                "speciality": "Cardiologist"
-            },
-            {
-                "id": 4,
-                "name": "Justin",
-                "speciality": "Surgeon"
-            }
-        ]
-    }
+    "patients": [
+        {
+            "id": 1,
+            "name": "Jonh",
+            "email": "john@gmail.com",
+            "password": "johnpassword",
+            "age": 21,
+            "phone": "+12343",
+            "Medical History": [
+                {
+                    "condition": "HIV",
+                    "diagnosis": "1-1-2015",
+                    "treatment": [
+                        "ARVs",
+                        "Regular Exercises"
+                    ]
+                },
+                {
+                    "condition": "Diabetes",
+                    "diagnosis": "2-5-2016",
+                    "treatment": "insulin"
+                }
+            ],
+            "appointments": [
+                {
+                    "id": 21,
+                    "date": "2-7-2023",
+                    "time": "8.40am",
+                    "doctor": "Dr.Evans",
+                    "Hospital": "Karen, Nairobi"
+                },
+                {
+                    "id": 34,
+                    "date": "4-8-2023",
+                    "time": "10.00am",
+                    "doctor": "Will",
+                    "Hospital": "Karen, Nairobi"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "James",
+            "email": "james@gmail.com",
+            "password": "jamespassword",
+            "age": 34,
+            "phone": "+2541898",
+            "Medical History": [
+                {
+                    "condition": "Allergies",
+                    "diagnosis": "4-5-2018",
+                    "treatment": [
+                        "Avoid allergens",
+                        "Zyrtec"
+                    ]
+                },
+                {
+                    "condition": "asthma",
+                    "diagnosis": "10-12-2002",
+                    "treatment": [
+                        "Inhaler",
+                        "Avoid allergens"
+                    ]
+                }
+            ],
+            "appointments": [
+                {
+                    "id": 102,
+                    "date": "3-8-2023",
+                    "time": "10.30",
+                    "doctor": "Dr.Kim",
+                    "Hospital": "Nairobi Hospital"
+                },
+                {
+                    "id": 34,
+                    "date": "4-8-2023",
+                    "time": "10.00am",
+                    "doctor": "Justin",
+                    "Hospital": "Meru General"
+                }
+            ]
+        }
+    ],
+    "doctors": [
+        {
+            "id": 1,
+            "name": "Dr.Evans",
+            "speciality": "Demartologist"
+        },
+        {
+            "id": 2,
+            "name": "Will",
+            "speciality": "endocrinologist"
+        },
+        {
+            "id": 3,
+            "name": "Dr.Kim",
+            "speciality": "Cardiologist"
+        },
+        {
+            "id": 4,
+            "name": "Justin",
+            "speciality": "Surgeon"
+        }
+    ]
 }
