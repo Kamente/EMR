@@ -18,6 +18,8 @@ MyHealth is a web application that provides a platform for patients to access an
 
 ## Project SetUp and Instructions
 
+Try login using the data (email and password) of one of the users in the json database. 
+
 #### To set up and run the project follow the below steps
 
 ```
