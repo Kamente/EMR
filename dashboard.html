@@ -1,59 +1,36 @@
-<!-- <!DOCTYPE html>
-<html>
-
-<head>
-    <title>MyHealth Patient Dashboard</title>
-</head>
-
-<body>
-    <h1>MyHealth Patient Dashboard</h1>
-    <div id="patientData">
-        <h2 id="patientName"></h2>
-        <p id="patientEmail"></p>
-        <p id="patientAge"></p>
-        <p id="patientPhone"></p>
-        <p id="patientMedicalHistory"></p>
-        <p id="patientAppointments"></p>
-    </div>
-
-    <script src="./script.js"></script>
-</body>
-
-</html>  -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styled.css">
-    <title>MyHealth Patient Dashboard</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>MyHealth Patient Dashboard</h1>
+    <div class="dashboard">
+        <h2>Welcome to the Dashboard</h2>
 
-        <div class="section">
-            <h2>Profile</h2>
-            <p><strong>Name:</strong> <span id="patientName"></span></p>
-            <p><strong>Email:</strong> <span id="patientEmail"></span></p>
-            <p><strong>Age:</strong> <span id="patientAge"></span></p>
-            <p><strong>Phone:</strong> <span id="patientPhone"></span></p>
+        <div class="profile">
+            <h3>Profile</h3>
+            <p><strong>Name:</strong> <span id="profileName"></span></p>
+            <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+            <p><strong>Age:</strong> <span id="profileAge"></span></p>
+            <p><strong>Phone:</strong> <span id="profilePhone"></span></p>
         </div>
 
-        <div class="section">
-            <h2>Medical History</h2>
+        <div class="medical-history">
+            <h3>Medical History</h3>
             <ul id="medicalHistoryList"></ul>
         </div>
 
-        <div class="section">
-            <h2>Appointments</h2>
+        <div class="appointments">
+            <h3>Appointments</h3>
             <ul id="appointmentsList"></ul>
         </div>
-
     </div>
+
     <script src="./script.js"></script>
 </body>
 
